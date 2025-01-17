@@ -37,7 +37,7 @@ Esto debería iniciar la aplicación en el servidor local. Por lo general, la ap
 
 ## Correr test unitarios
 
-}Para ejecutar los test unitarios con el [Karma](https://karma-runner.github.io) ejecutador de pruebas, usa el siguiente comando:
+}Para ejecutar los test unitarios con [Karma](https://karma-runner.github.io) ejecutador de pruebas, usa el siguiente comando:
 
 ```bash
 ng test
