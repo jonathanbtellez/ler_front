@@ -5,7 +5,7 @@ Este protecto esta desarollado con [Angular CLI](https://github.com/angular/angu
 Se requiere una version de node mayor o igual a la 18
 
 ## Dependencias
-Para ejecutar el projecto se deben intallar las dependencias
+Para ejecutar el projecto se deben instalar las dependencias
 
 ```bash
 npm install
