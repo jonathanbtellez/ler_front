@@ -53,12 +53,16 @@
   -moz-box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.15);
   border-radius: .3rem;
+  width: 25%;
 }
 
 .table__column__body input {
   border-radius: .3rem;
   border: none;
   padding: .5rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 600px) {
@@ -73,8 +77,12 @@
   }
 
   .table__container {
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding: 3rem;
+  }
+
+  .table__column__body {
+    width: 25%;
   }
 }
