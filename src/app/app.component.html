@@ -1,42 +1,6 @@
-<main class="main">
-  <div class="content">
-    <div class="nav-container">
-      <div class="nav-image__container">
-        <img [src]="image" alt="Logo web" id="image" class="nav-image" />
-      </div>
-      <div>
-        <h2>{{title}}</h2>
-      </div>
-    </div>
-    <div class="user-container">
-      <div class="table__title">
-        <h1 id="title">Usuarios existentes en database</h1>
-      </div>
-      <div *ngIf="users.length === 0; else tableContent">
-        <p>No hay usuarios disponibles.</p>
-      </div>
-      <ng-template #tableContent id="users">
-        <div class="table__container">
-          <table>
-            <thead>
-              <tr>
-                <th class="table__column__header">id</th>
-                <th class="table__column__header">Nombre</th>
-                <th class="table__column__header">Email</th>
-                <th class="table__column__header">Edad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let user of users">
-                <td class="table__column__body"><input type="text" [value]="user.id" /></td>
-                <td class="table__column__body"><input type="text" [value]="user.name" /></td>
-                <td class="table__column__body"><input type="text" [value]="user.email" /></td>
-                <td class="table__column__body"><input type="text" [value]="user.age" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </ng-template>
-    </div>
+<app-navbar></app-navbar>
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
   </div>
 </main>

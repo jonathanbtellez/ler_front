@@ -1,0 +1,23 @@
+.user-detail__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  -webkit-box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  padding-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .user-detail__container {
+    width: 70%;
+    margin: auto;
+    padding: 3rem;
+  }
+}

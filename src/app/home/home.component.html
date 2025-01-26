@@ -1,0 +1,34 @@
+<div class="user-container">
+  <div class="table__title">
+    <h1 id="title">Usuarios existentes en database</h1>
+  </div>
+  <div *ngIf="users.length === 0; else tableContent">
+    <p>No hay usuarios disponibles.</p>
+  </div>
+  <ng-template #tableContent id="users">
+    <div class="table__container">
+      <table>
+        <thead>
+          <tr>
+            <th class="table__column__header">id</th>
+            <th class="table__column__header">Nombre</th>
+            <th class="table__column__header">Email</th>
+            <th class="table__column__header">Edad</th>
+            <th class="table__column__header">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td class="table__column__body"><input type="text" [value]="user.id" /></td>
+            <td class="table__column__body"><input type="text" [value]="user.name" /></td>
+            <td class="table__column__body"><input type="text" [value]="user.email" /></td>
+            <td class="table__column__body"><input type="text" [value]="user.age" /></td>
+            <td class="table__column__body">
+              <a [routerLink]="['/user', user.id]" class="table__button">Ver</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-template>
+</div>

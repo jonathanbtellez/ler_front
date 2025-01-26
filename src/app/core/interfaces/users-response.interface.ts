@@ -1,6 +1,6 @@
 import { User } from "./user.interface";
 
-export interface UserResponse {
+export interface UsersResponse {
   status: string;
-  data: User;
+  data: User[];
 }

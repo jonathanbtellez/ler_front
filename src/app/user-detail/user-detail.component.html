@@ -1,0 +1,21 @@
+<div class="user-detail__container">
+  <div>
+    <h3 id="title">Detalles del usuario</h3>
+  </div>
+  <div>
+    <div>
+      <p for="name">Nombre: {{user?.name}}</p>
+    </div>
+    <div>
+      <p for="email">Email: {{user?.email}}</p>
+    </div>
+    <div>
+      <p for="age">Edad: {{user?.age}}</p>
+    </div>
+  </div>
+  <div>
+    <button [routerLink]="['/']">
+      <mat-icon>home</mat-icon>
+    </button>
+  </div>
+</div>
